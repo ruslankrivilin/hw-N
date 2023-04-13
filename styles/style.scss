@@ -1,7 +1,20 @@
 *{margin: 0;
     padding: 0;
     }
+
+    @keyframes pictures {
+        0% {
+            transform: scale(1);
+        }
     
+        50% {
+            transform: scale(1.1);
+        }
+    
+        100% {
+            transform: scale(1);
+        }
+    }
     body {
         font-family: 'Montserrat', sans-serif;
     }
@@ -52,6 +65,11 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
+        transition: all 0.3s;
+    }
+    
+    .button:hover {
+        transform: scale(1.05);
     }
 
     .for {
@@ -79,7 +97,12 @@
         margin-top: 128px;
         padding-left: 32px;
         box-sizing: border-box;
-        padding-bottom: 32px;     
+        padding-bottom: 32px;
+        transition: all 0.3s;     
+    }
+
+    .for__item:hover {
+        transform: scale(1.05);
     }
 
     .for__item_1 {
@@ -94,4 +117,5 @@
         background-image: url(../img/game_3.jpg);
     }
 
+@import 'mobyle';
     
