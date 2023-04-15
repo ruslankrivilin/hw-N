@@ -1,6 +1,6 @@
 //let password = ('пароль');
 //let writepassword = prompt (`Введите пароль`);
-//if (password) {
+//if (password===writepassword) {
 //    alert (`Пароль введен верно`);
 //} else {
 //    alert (`Пароль введен неправильно`);
@@ -25,53 +25,36 @@
 //let b = Number('3');
 //alert(a + b);
 
-//let month = Number (prompt(`Введите номер месяца и узнаете к какому сезону он принадлежит`));
-//switch (month) {
+// let month = Number (prompt(`Введите номер месяца и узнаете к какому сезону он принадлежит`));
+// switch (month) {
+//    case 12: 
 //    case 1:
-//        alert (`зима`)
-//        break;
 //    case 2:
 //        alert (`зима`)
 //        break;
 //    case 3:
-//        alert (`весна`)
-//        break;
 //    case 4:
-//        alert (`весна`)
-//        break;
 //    case 5:
 //        alert (`весна`)
 //        break;
 //    case 6:
-//        alert (`лето`)
-//        break;
 //    case 7:
-//        alert (`лето`)
-//        break;
 //    case 8:
 //        alert (`лето`)
 //        break;
 //    case 9:
-//        alert (`осень`)
-//        break;
 //    case 10:
-//        alert (`осень`)
-//        break;
 //    case 11:
 //        alert (`осень`)
 //        break;
-//    case 12:
-//        alert (`зима`)
-//        break;    
 //    default:
 //        alert (`Некорректный ввод`)
 //        break;
-//}
+// }
 
-//let kod = Number(prompt (`Пожалуйста, введите любое число`));
-//if (kod % 2 == 0) {
-//    alert (`Число четное`);
-//} else {
-//    alert (`Число нечетное`);
-//}
-льожр
+// let number = prompt (`Пожалуйста, введите любое число`);
+// if (isNaN(number)) {
+//     alert (`Вы ввели не число`);
+// } else {
+//     alert (number % 2 === 0 ? `Число четное` : `Число нечетное`);
+// }

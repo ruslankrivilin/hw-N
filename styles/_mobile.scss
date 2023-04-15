@@ -1,11 +1,13 @@
-@media (max-width: 767px) {
+@media (max-width: 724px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
     }
 
     .header {
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .title {
@@ -31,19 +33,12 @@
     .for {
         display: flex;
         flex-wrap: wrap;
-        
-        &__item {
-            margin-top: none;
-            margin-bottom: none;
+        flex-direction: column;
+        align-items: center;
 
-            &_1 {
-                margin-top: 128px;
-                margin-bottom: 128px;
-            }
-            
-            &_3 { 
-                margin-bottom: 128px;
-            }
+        &__item {
+            width: 343px;
+            padding-left: 16px;
         }
         
     }        

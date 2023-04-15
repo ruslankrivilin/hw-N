@@ -73,7 +73,10 @@ body {
 .for {
   background: #000915;
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
+  padding-top: 128px;
+  padding-bottom: 128px;
 }
 
 .for__item {
@@ -91,8 +94,6 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  margin-bottom: 128px;
-  margin-top: 128px;
   padding-left: 32px;
   box-sizing: border-box;
   padding-bottom: 32px;
@@ -115,10 +116,20 @@ body {
   background-image: url(../img/game_3.jpg);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1400px) {
+  .center {
+    padding-left: 100px;
+  }
+}
+@media (max-width: 724px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .title {
     font-style: normal;
@@ -141,16 +152,11 @@ body {
   .for {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
   .for__item {
-    margin-top: none;
-    margin-bottom: none;
-  }
-  .for__item_1 {
-    margin-top: 128px;
-    margin-bottom: 128px;
-  }
-  .for__item_3 {
-    margin-bottom: 128px;
+    width: 343px;
+    padding-left: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
