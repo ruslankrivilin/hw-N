@@ -1,60 +1,48 @@
-//let password = ('пароль');
-//let writepassword = prompt (`Введите пароль`);
-//if (password===writepassword) {
-//    alert (`Пароль введен верно`);
-//} else {
-//    alert (`Пароль введен неправильно`);
-//};
-
-//let c = Number(prompt (``));
-//if (c >= 0 && c <= 10) {
-//    alert (`Верно`);
-//} else {
-//    alert (`Неверно`);
-//}
-
-//let d = Number(prompt(``));
-//let e = Number(prompt(``));
-//if (d > 100 || e > 100) {//
-//    alert (`Верно`);
-//} else {
-//    alert (`Неверно`);
-//}
-
-//let a = Number('2');
-//let b = Number('3');
-//alert(a + b);
-
-// let month = Number (prompt(`Введите номер месяца и узнаете к какому сезону он принадлежит`));
-// switch (month) {
-//    case 12: 
-//    case 1:
-//    case 2:
-//        alert (`зима`)
-//        break;
-//    case 3:
-//    case 4:
-//    case 5:
-//        alert (`весна`)
-//        break;
-//    case 6:
-//    case 7:
-//    case 8:
-//        alert (`лето`)
-//        break;
-//    case 9:
-//    case 10:
-//    case 11:
-//        alert (`осень`)
-//        break;
-//    default:
-//        alert (`Некорректный ввод`)
-//        break;
+// let i = 0;
+// while (i<2) {
+//     alert(`Привет`);
+//     i++;
 // }
 
-// let number = prompt (`Пожалуйста, введите любое число`);
-// if (isNaN(number)) {
-//     alert (`Вы ввели не число`);
-// } else {
-//     alert (number % 2 === 0 ? `Число четное` : `Число нечетное`);
+// let i = 1;
+// do {
+//     alert (i);
+//     i++;
+// } while (i<=5)
+
+// let i = 7;
+// do {
+//     alert (i);
+//     i++;
+// } while (i<=22)
+
+// ИЛИ
+
+// for (i=7;i<=22;i++) {
+//     alert(i)
+// }
+
+// const obj = {
+// 	'Коля': '200',
+// 	'Вася': '300',
+// 	'Петя': '400'
+// };
+// for (let salary in obj) {
+//     alert (`${salary}-зарплата ${obj[salary]}$`)
+// }
+
+// let n=1000;
+// let num = 0;
+// while (n>=50) {
+//     num++;
+//     if (n=n/2) {
+//         continue;
+//     }
+// }
+// alert(n);
+// alert (num);
+
+// let friday = 1;
+// for (let friday = 1; friday <= 31;friday = friday + 7) {
+//     alert (`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
 // }
