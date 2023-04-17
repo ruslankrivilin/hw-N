@@ -1,46 +1,48 @@
-//let a=10;
-//alert(a);
-//alert(20);
+// let i = 0;
+// while (i<2) {
+//     alert(`Привет`);
+//     i++;
+// }
 
-//const iphone=2007;
-//alert(`Год выпуска первого IPhone: ${iphone}`);
+// let i = 1;
+// do {
+//     alert (i);
+//     i++;
+// } while (i<=5)
 
-//let info='Брендон Айтем';
-//alert(`Создатель JavaScript: ${info}`);
+// let i = 7;
+// do {
+//     alert (i);
+//     i++;
+// } while (i<=22)
 
-//let x=10;
-//let y=2;
-//alert(`Сложение ${x+y}\nВычитание ${x-y}\nУмножение ${x*y}\nДеление ${x/y}`);
+// ИЛИ
 
-//let result=2**5;
-//alert(result);
+// for (i=7;i<=22;i++) {
+//     alert(i)
+// }
 
-//let u=9;
-//let b=2;
-//alert(`Остаток от деления: ${u%b}`);
+// const obj = {
+// 	'Коля': '200',
+// 	'Вася': '300',
+// 	'Петя': '400'
+// };
+// for (let salary in obj) {
+//     alert (`${salary}-зарплата ${obj[salary]}$`)
+// }
 
-//let num = 1;
-//num = num + 5;
-//num = num - 3;
-//num = num * 7;
-//num = num / 3;
-//num = num + 1;
-//num = num - 1;
-//alert(num);
+// let n=1000;
+// let num = 0;
+// while (n>=50) {
+//     num++;
+//     if (n=n/2) {
+//         continue;
+//     }
+// }
+// alert(n);
+// alert (num);
 
-//let age = Number (prompt(`Сколько вам лет?`));
-//alert(age);
-
-//const user = {
-    //name: `Руслан`,
-    //age: 21,
-    //isAdmin: true
-//}
-//user.cityOfResidence = true;
-//user.age=9
-//delete user.cityOfResidence;
-//let info = prompt ("Какую информацию хотите узнать о пользователе?");
-//alert(user[info]);
-
-//let names = prompt (`Введите ваше имя:`);
-//alert(`Привет, ${names} !`)
+// let friday = 1;
+// for (let friday = 1; friday <= 31;friday = friday + 7) {
+//     alert (`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
+// }
