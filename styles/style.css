@@ -43,6 +43,16 @@ body {
   width: 690px;
 }
 
+.year__info {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
 .text {
   color: #ffffff;
   font-weight: 300;
@@ -75,7 +85,11 @@ body {
   display: flex;
   gap: 32px;
   padding-top: 128px;
-  padding-bottom: 128px;
+  padding-bottom: 410px;
+}
+
+.year {
+  background: #000915;
 }
 
 .for__item {
@@ -113,6 +127,22 @@ body {
 
 .for__item_3 {
   background-image: url(../img/game_3.jpg);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background: #000915;
+  gap: 200px;
+  padding-bottom: 240px;
+}
+
+.picture {
+  transition: all 0.3s;
+}
+
+.picture:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 1400px) {

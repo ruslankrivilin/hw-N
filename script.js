@@ -15,7 +15,7 @@
 // let question = prompt (`Введите число`);
 // let number;
 // function even(number) {
-//     return (number % 2 === 0 ? `Число четное` : `Число нечетное`);
+//     return number % 2 === 0 ? `Число четное` : `Число нечетное`;
 // };
 // let result = even(number);
 // alert (result);
@@ -65,16 +65,16 @@
 // function numberСheck(x, y) {
 //     x = +(prompt('введите число')), 
 //     y = +(prompt('введите число')); 
-//     return isNaN(x) === false && isNaN(y) === false ? alert(x + y) : alert('Одно или оба значения не являются числом')
+//     return isNaN(x) === false && isNaN(y) === false ? alert(x + y) : alert('Одно или оба значения не являются числом');
 // }
 // numberСheck ();
 
-//Задача 6
+// Задача 6
 
 // function numberСheck() {
 
-//     (n = +(prompt('введите число')));
-//     return isNaN(n) === false ? alert(`n в кубе равняется ${n = n ** 3}`) : alert('Переданный параметр не является числом')
+//     n = prompt('введите число');
+//     alert(isNaN(n) ? `Переданный параметр не является числом` : `n в кубе равняется ${n = n ** 3}`)
 
 // };
 
@@ -110,34 +110,18 @@
 
 //Задача 8
 
-    // let month = prompt (`Введите номер месяца`);
-    // if (month === 12 || 1 || 2) {
-        
-    //     function result() {
-    //         alert (`Зима`);
-    //     }
-        
-    // } else if (month === 3 || 4 || 5) {
-        
-    //     function result() {
-    //         alert (`Весна`);
-    //     }
-        
-    // } else if (month === 6 || 7 || 8) {
-        
-    //     function result() {
-    //         alert (`Лето`);
-    //     }
-        
-    // } else if (month === 9 || 10 || 11) {
-        
-    //     function result() {
-    //         alert (`Осень`);
-    //     }
-        
-    // } else if (isNaN(n) === true) {
-    //     function result() {
-    //         alert ('Переданный параметр не является числом');
-    //     }
-    // }
-    // result ();
+
+function result(){
+    let month = prompt (`Введите номер месяца`);
+    if (month === 12 || month === 1 || month === 2) {
+        alert(`зима`)
+    } else if (month === 3 || month === 4 || month === 5) {
+        alert(`весна`)
+    } else if (month === 6 || month === 7 || month === 8) {
+        alert(`лето`)
+    } else if (month === 9 || month === 10 || month === 11) {
+        alert(`осень`)
+    } else if (isNaN(month)) {
+        alert (`Переданный параметр не является числом`);
+    }
+}
