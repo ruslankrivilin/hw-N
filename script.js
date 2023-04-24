@@ -1,127 +1,99 @@
-//Задача 1
+//Задание 1
 
-// function min(a, b) {
-//     if (a <= b) {
-//         return a;
-//     } else {
-//         return b;
-//     }
+// const arr = [1, 5, 4, 10, 0, 3];
+// for (let i = 0; i < arr.length; i++) {
+// 	if (arr[i] == 10) break;
+// 	console.log(arr[i]);
 // }
-// let result = min (4, 8);
-// alert (result);
+// const numbs = [1, 5, 4, 10, 0, 3]; numbs.forEach((el, index) => { console.log(`${index}: ${el}`); });
 
 //Задача 2
 
-// let question = prompt (`Введите число`);
-// let number;
-// function even(number) {
-//     return number % 2 === 0 ? `Число четное` : `Число нечетное`;
-// };
-// let result = even(number);
-// alert (result);
+// const number = [1, 5, 4, 10, 0, 3];
+// console.log(numbs[2]);
 
-//Задача 3.1
+//Задача 3
 
-// function square(x) {
-//     alert (x*x);
-// }
-
-//Задача 3.2
-
-// function square(x) {
-//     return x*x;
-// }
-// let result = square(x);
-// alert (result);
+// let numbs = [1, 3, 5, 10, 20];
+// numbs = numbs.join (` `);
+// console.log (numbs);
 
 //Задача 4
 
-// let age = prompt (`Сколько Вам лет ?`);
+// let arr = [];
 
-// if (age < 0) {
-
-//     function printMessage() {
-//         alert("Вы ввели неправильное значение");
-//     }
-
-// } else if (age >= 0 || age <= 12) {
-
-//     function printMessage () {
-//         alert (`Привет, друг!`);
-//     }
-    
-// } else (age >= 13) {
-
-//     function printMessage () {
-//         alert (`Добро пожаловать!`);
-//     }
-
+// for (let i = 0; i < 3; i++) {
+// 	arr[i] = []; // создаем подмассив
+	
+// 	for (let j = 0; j < 3; j++) {
+// 		arr[i].push(j + 1); // заполняем подмассив числами
+// 	}
 // }
 
-// printMessage();
+// console.log(arr);
 
-//Задача 5
+// Задание 5
 
-// function numberСheck(x, y) {
-//     x = +(prompt('введите число')), 
-//     y = +(prompt('введите число')); 
-//     return isNaN(x) === false && isNaN(y) === false ? alert(x + y) : alert('Одно или оба значения не являются числом');
+// const arr = [1, 1, 1];
+// arr.push (2 ,2, 2)
+// console.log (arr);
+
+// Задание 6
+
+// const arr = [9, 8, 7, 'a', 6, 5];
+// arr.sort ();
+// arr.pop ();
+// console.log (arr);
+
+// Задание 7
+
+// let arr = [9, 8, 7, 6, 5];
+// let search = [...arr].includes(+prompt('Введите число'));
+// console.log(search)
+
+//Задание 8
+
+// const str = 'abcdef';
+// console.log([...str].reverse().join(''));
+
+//Задание 9
+
+// const map = [[1, 2, 3,],[4, 5, 6]];
+// console.log([...map].join(','))
+
+//Задание 10
+
+// let rundom = [1, 2, 3, 4, 5];
+// for (let i=1; i <= 10; i++) {
+//     console.log (rundom[i-1]+rundom[i]);
 // }
-// numberСheck ();
 
-// Задача 6
+//Задание 11
 
-// function numberСheck() {
+// const numbers = [1, 2, 3];
 
-//     n = prompt('введите число');
-//     alert(isNaN(n) ? `Переданный параметр не является числом` : `n в кубе равняется ${n = n ** 3}`)
+// function total(numbers) {
+//     return numbers.map(x => x ** 2);
+// }
 
-// };
+// console.log(total(numbers));
 
-// numberСheck();
+//Задание 12
 
-//Задача 7
+// const words = ['слово', '', 'слог', 'длинное предложение', 'буква'];
 
-// function getRectangleArea() {
-//     return 3,14 * this.radius * 2;
-//   }
-// function getRectanglePerimeter() {
-//     return 2 * 3,14 * this.radius;
-//   }
-  
-// const circle1 = {
-//     radius: 4,
-  
-//     getArea : getRectangleArea,
-//     getPerimeter : getRectanglePerimeter,
-// };
-  
-// const circle2 = {
-//     radius: 6,
-  
-//     getArea : getRectangleArea,
-//     getPerimeter : getRectanglePerimeter,
-// };
-  
-// alert(circle1.getPerimeter());
-// alert(circle2.getArea());
-// alert(circle1.getArea());
-// alert(circle2.getPerimeter());
+// const totalWords = arr => {
+//     return arr.filter(words => words.length == 5).length;
+// }
 
-//Задача 8
+// console.log(totalWords(words));
 
+//Задание 13
 
-function result(){
-    let month = prompt (`Введите номер месяца`);
-    if (month === 12 || month === 1 || month === 2) {
-        alert(`зима`)
-    } else if (month === 3 || month === 4 || month === 5) {
-        alert(`весна`)
-    } else if (month === 6 || month === 7 || month === 8) {
-        alert(`лето`)
-    } else if (month === 9 || month === 10 || month === 11) {
-        alert(`осень`)
-    } else if (isNaN(month)) {
-        alert (`Переданный параметр не является числом`);
-    }
-}
+// const numbers = [1, -5, 6, 0, -10,];
+// function total(numbers) {
+//     return numbers.filter(x => x < 0);
+// }
+
+// console.log(total(numbers));
+
