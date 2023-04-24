@@ -31,7 +31,7 @@
 // }
 
 // console.log(arr);
-
+;l
 // Задание 5
 
 // const arr = [1, 1, 1];
