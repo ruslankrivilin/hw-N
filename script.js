@@ -1,99 +1,111 @@
 //Задание 1
 
-// const arr = [1, 5, 4, 10, 0, 3];
-// for (let i = 0; i < arr.length; i++) {
-// 	if (arr[i] == 10) break;
-// 	console.log(arr[i]);
-// }
-// const numbs = [1, 5, 4, 10, 0, 3]; numbs.forEach((el, index) => { console.log(`${index}: ${el}`); });
+// let user = `js`;
+// console.log(user.toUpperCase())
 
 //Задача 2
 
-// const number = [1, 5, 4, 10, 0, 3];
-// console.log(numbs[2]);
+// const animals = ['Кошка', 'Кит', 'Комар', 'Носорог'];
+// const searchStart = 'ко';
+
+// animals.forEach((animal) => {
+// 	if (animal.toLowerCase().includes(searchStart.toLowerCase())) {
+// 		console.log(animal);
+// 	}
+// });
 
 //Задача 3
 
-// let numbs = [1, 3, 5, 10, 20];
-// numbs = numbs.join (` `);
-// console.log (numbs);
+// console.log (Math.ceil(32.58884)); // Возвращает значение числа, округлённое к большему целому.
+
+// console.log (Math.floor(32.58884)); // Возвращает значение числа, округлённое к меньшему целому.
+
+// console.log (Math.round(32.58884)); // Возвращает значение числа, округлённое до ближайшего целого.
 
 //Задача 4
 
-// let arr = [];
 
-// for (let i = 0; i < 3; i++) {
-// 	arr[i] = []; // создаем подмассив
-	
-// 	for (let j = 0; j < 3; j++) {
-// 		arr[i].push(j + 1); // заполняем подмассив числами
-// 	}
-// }
+// let arr = [52, 53, 49, 77, 21, 32];
 
-// console.log(arr);
-;l
+// console.log("Min:", Math.min(...arr));
+// console.log("Max:", Math.max(...arr));
+
 // Задание 5
 
-// const arr = [1, 1, 1];
-// arr.push (2 ,2, 2)
-// console.log (arr);
+// function getRandomInt(minValue, maxValue) {
+//     return Math.round (Math.random() * (maxValue- minValue)) + minValue;
+
+// }
+
+// console.log(getRandomInt(1, 11));
 
 // Задание 6
 
-// const arr = [9, 8, 7, 'a', 6, 5];
-// arr.sort ();
-// arr.pop ();
-// console.log (arr);
+// function number (n) {
+// let randomNumber = [];
+
+// for(i = 0; i < (Math.floor(n/2)); i++) {
+// randomNumber.push(Math.round(Math.random() * n));
+// }
+
+// return randomNumber;
+// }
+
+// console.log(number(5));
 
 // Задание 7
 
-// let arr = [9, 8, 7, 6, 5];
-// let search = [...arr].includes(+prompt('Введите число'));
-// console.log(search)
+// function result (minValue, maxValue) {
+//    return Math.round(Math.random() * (maxValue - minValue) + minValue);
+// }
+// console.log (result(2, 6))
 
 //Задание 8
 
-// const str = 'abcdef';
-// console.log([...str].reverse().join(''));
+// let myDate = new Date("28 April 2023");
+// console.log(myDate); 
 
 //Задание 9
 
-// const map = [[1, 2, 3,],[4, 5, 6]];
-// console.log([...map].join(','))
+// function getFutureDate(daysAhead) {
+// 	const date = new Date();
+// 	date.setDate(date.getDate() + daysAhead);
+// 	return date;
+// }
+  
+// const fourDays = getFutureDate(73);
+
+// console.log(fourDays)
 
 //Задание 10
 
-// let rundom = [1, 2, 3, 4, 5];
-// for (let i=1; i <= 10; i++) {
-//     console.log (rundom[i-1]+rundom[i]);
-// }
+// const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+
+// const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+// let myDate = new Date();
+
+// let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + "- это " + days[myDate.getDay()] + " " + myDate.toLocaleTimeString(`ru-Ru`);
+
+// console.log(fullDate);
 
 //Задание 11
 
-// const numbers = [1, 2, 3];
+function results() {
+    let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+list = list.sort(() => Math.random() - 0.5);
+alert (list);
 
-// function total(numbers) {
-//     return numbers.map(x => x ** 2);
-// }
+let questionOne = prompt (`Чему равнялся первый элемент массива?`);
+let questionTwo = prompt (`Чему равнялся последний элемент массива?`);
 
-// console.log(total(numbers));
+if (questionOne.toLowerCase() === list [0].toLowerCase() && questionTwo.toLowerCase() === list [list.length - 1].toLowerCase()) {
+    alert (`Поздравляю Вы угадали !`);
+} else if (questionOne.toLowerCase() === list [0].toLowerCase() || questionTwo.toLowerCase() === list [list.length - 1].toLowerCase()) {
+    alert (`Вы были близки к победе!`);
+} else {
+    alert (`Вы не угадали`);
+}
+}
 
-//Задание 12
-
-// const words = ['слово', '', 'слог', 'длинное предложение', 'буква'];
-
-// const totalWords = arr => {
-//     return arr.filter(words => words.length == 5).length;
-// }
-
-// console.log(totalWords(words));
-
-//Задание 13
-
-// const numbers = [1, -5, 6, 0, -10,];
-// function total(numbers) {
-//     return numbers.filter(x => x < 0);
-// }
-
-// console.log(total(numbers));
 
