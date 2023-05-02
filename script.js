@@ -1,111 +1,78 @@
 //Задание 1
 
-// let user = `js`;
-// console.log(user.toUpperCase())
+// const people = [
+//   { name: 'Глеб', age: 29 },
+//   { name: 'Анна', age: 17 },
+//   { name: 'Олег', age: 7 },
+//   { name: 'Оксана', age: 47 }
+// ];
+
+// console.log(people.sort(function(a, b){
+//   return a.age-b.age
+// }));
 
 //Задача 2
 
-// const animals = ['Кошка', 'Кит', 'Комар', 'Носорог'];
-// const searchStart = 'ко';
-
-// animals.forEach((animal) => {
-// 	if (animal.toLowerCase().includes(searchStart.toLowerCase())) {
-// 		console.log(animal);
-// 	}
+// function isPositive(number) {
+//   return number >=0;
+//   }
+//   function isMale(person) {
+//   return person.gender === 'male';
+//   }
+//   function filter(arr, callback) {
+//   const resultArr = [];
+//   arr.map((elem) => {
+//     if (callback(elem))  {
+//     resultArr.push(elem)
+//   }
 // });
+//   return resultArr;
+// }
+  
+//   console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+  
+//   const people = [
+//      {name: 'Глеб', gender: 'male'},
+//      {name: 'Анна', gender: 'female'},
+//      {name: 'Олег', gender: 'male'},
+//      {name: 'Оксана', gender: 'female'}
+//   ];
+  
+//   console.log(filter(people, isMale));
 
 //Задача 3
 
-// console.log (Math.ceil(32.58884)); // Возвращает значение числа, округлённое к большему целому.
+// let timerId = setInterval(() => alert('tick'), 3000);
 
-// console.log (Math.floor(32.58884)); // Возвращает значение числа, округлённое к меньшему целому.
-
-// console.log (Math.round(32.58884)); // Возвращает значение числа, округлённое до ближайшего целого.
+// setTimeout(() => { clearInterval(timerId); alert('30 секунд прошло'); }, 30000);
 
 //Задача 4
 
+// function delayForSecond(callback) {
+//   setTimeout(callback, 1000);
+//   callback();
+// }
 
-// let arr = [52, 53, 49, 77, 21, 32];
-
-// console.log("Min:", Math.min(...arr));
-// console.log("Max:", Math.max(...arr));
+// delayForSecond(function () {
+//   console.log('Привет, Глеб!');
+// })
 
 // Задание 5
 
-// function getRandomInt(minValue, maxValue) {
-//     return Math.round (Math.random() * (maxValue- minValue)) + minValue;
+// function delayForSecond(cb) {
+//   setTimeout(() => {
+//       console.log('Прошла одна секунда');
+//       if(cb) { 	cb(); }
 
+//   }, 1000)
 // }
 
-// console.log(getRandomInt(1, 11));
 
-// Задание 6
-
-// function number (n) {
-// let randomNumber = [];
-
-// for(i = 0; i < (Math.floor(n/2)); i++) {
-// randomNumber.push(Math.round(Math.random() * n));
+// function sayHi (name) {
+//   console.log(`Привет, ${name}!`);
 // }
 
-// return randomNumber;
-// }
+// delayForSecond(setTimeout(() => (sayHi('Глеб')), 2000))
 
-// console.log(number(5));
-
-// Задание 7
-
-// function result (minValue, maxValue) {
-//    return Math.round(Math.random() * (maxValue - minValue) + minValue);
-// }
-// console.log (result(2, 6))
-
-//Задание 8
-
-// let myDate = new Date("28 April 2023");
-// console.log(myDate); 
-
-//Задание 9
-
-// function getFutureDate(daysAhead) {
-// 	const date = new Date();
-// 	date.setDate(date.getDate() + daysAhead);
-// 	return date;
-// }
-  
-// const fourDays = getFutureDate(73);
-
-// console.log(fourDays)
-
-//Задание 10
-
-// const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-
-// const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-
-// let myDate = new Date();
-
-// let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + "- это " + days[myDate.getDay()] + " " + myDate.toLocaleTimeString(`ru-Ru`);
-
-// console.log(fullDate);
-
-//Задание 11
-
-function results() {
-    let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-list = list.sort(() => Math.random() - 0.5);
-alert (list);
-
-let questionOne = prompt (`Чему равнялся первый элемент массива?`);
-let questionTwo = prompt (`Чему равнялся последний элемент массива?`);
-
-if (questionOne.toLowerCase() === list [0].toLowerCase() && questionTwo.toLowerCase() === list [list.length - 1].toLowerCase()) {
-    alert (`Поздравляю Вы угадали !`);
-} else if (questionOne.toLowerCase() === list [0].toLowerCase() || questionTwo.toLowerCase() === list [list.length - 1].toLowerCase()) {
-    alert (`Вы были близки к победе!`);
-} else {
-    alert (`Вы не угадали`);
-}
-}
 
 

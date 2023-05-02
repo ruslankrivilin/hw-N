@@ -61,12 +61,16 @@
         align-items: center;
         gap: 64px;
         padding-bottom: 136px;
-        
     }
 
     .img {
         width: 344px;
         height: 231px;
+    }
+
+    .button {
+        margin: 0 auto;
+        display: block;
     }
 
 }
