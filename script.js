@@ -1,46 +1,78 @@
-//let a=10;
-//alert(a);
-//alert(20);
+//Задание 1
 
-//const iphone=2007;
-//alert(`Год выпуска первого IPhone: ${iphone}`);
+// const people = [
+//   { name: 'Глеб', age: 29 },
+//   { name: 'Анна', age: 17 },
+//   { name: 'Олег', age: 7 },
+//   { name: 'Оксана', age: 47 }
+// ];
 
-//let info='Брендон Айтем';
-//alert(`Создатель JavaScript: ${info}`);
+// console.log(people.sort(function(a, b){
+//   return a.age-b.age
+// }));
 
-//let x=10;
-//let y=2;
-//alert(`Сложение ${x+y}\nВычитание ${x-y}\nУмножение ${x*y}\nДеление ${x/y}`);
+//Задача 2
 
-//let result=2**5;
-//alert(result);
+// function isPositive(number) {
+//   return number >=0;
+//   }
+//   function isMale(person) {
+//   return person.gender === 'male';
+//   }
+//   function filter(arr, callback) {
+//   const resultArr = [];
+//   arr.map((elem) => {
+//     if (callback(elem))  {
+//     resultArr.push(elem)
+//   }
+// });
+//   return resultArr;
+// }
+  
+//   console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+  
+//   const people = [
+//      {name: 'Глеб', gender: 'male'},
+//      {name: 'Анна', gender: 'female'},
+//      {name: 'Олег', gender: 'male'},
+//      {name: 'Оксана', gender: 'female'}
+//   ];
+  
+//   console.log(filter(people, isMale));
 
-//let u=9;
-//let b=2;
-//alert(`Остаток от деления: ${u%b}`);
+//Задача 3
 
-//let num = 1;
-//num = num + 5;
-//num = num - 3;
-//num = num * 7;
-//num = num / 3;
-//num = num + 1;
-//num = num - 1;
-//alert(num);
+// let timerId = setInterval(() => alert('tick'), 3000);
 
-//let age = Number (prompt(`Сколько вам лет?`));
-//alert(age);
+// setTimeout(() => { clearInterval(timerId); alert('30 секунд прошло'); }, 30000);
 
-//const user = {
-    //name: `Руслан`,
-    //age: 21,
-    //isAdmin: true
-//}
-//user.cityOfResidence = true;
-//user.age=9
-//delete user.cityOfResidence;
-//let info = prompt ("Какую информацию хотите узнать о пользователе?");
-//alert(user[info]);
+//Задача 4
 
-//let names = prompt (`Введите ваше имя:`);
-//alert(`Привет, ${names} !`)
+// function delayForSecond(callback) {
+//   setTimeout(callback, 1000);
+//   callback();
+// }
+
+// delayForSecond(function () {
+//   console.log('Привет, Глеб!');
+// })
+
+// Задание 5
+
+// function delayForSecond(cb) {
+//   setTimeout(() => {
+//       console.log('Прошла одна секунда');
+//       if(cb) { 	cb(); }
+
+//   }, 1000)
+// }
+
+
+// function sayHi (name) {
+//   console.log(`Привет, ${name}!`);
+// }
+
+// delayForSecond(setTimeout(() => (sayHi('Глеб')), 2000))
+
+
+
